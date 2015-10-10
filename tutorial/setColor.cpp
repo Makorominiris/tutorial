@@ -1,5 +1,6 @@
 #include <iostream>
 #include <Windows.h>
+#include <cstdio>
 using namespace std;
 
 //-----------------------------------------------------
@@ -11,6 +12,7 @@ using namespace std;
 #define		COL_DARK_RED		0x04
 #define		COL_DARK_VIOLET		0x05
 #define		COL_DARK_YELLOW		0x06
+#define		COL_GRAY		0x07
 #define		COL_LIGHT_GRAY		0x08
 #define		COL_BLUE		0x09
 #define		COL_GREEN		0x0a
@@ -119,6 +121,7 @@ int main() {
 	cout << "red\t";
 	setColor(COL_BLUE, COL_GRAY);
 	cout << "blue\t";
+	cout << "\n";
 
 	setColor(COL_WHITE, COL_BLACK);
 	cout << "BG:light-gray\t";
@@ -136,6 +139,7 @@ int main() {
 	cout << "red\t";
 	setColor(COL_BLUE, COL_LIGHT_GRAY);
 	cout << "blue\t";
+	cout << "\n";
 
 	setColor(COL_WHITE, COL_BLACK);
 	cout << "BG:dark-yellow\t";
@@ -153,6 +157,7 @@ int main() {
 	cout << "red\t";
 	setColor(COL_BLUE, COL_DARK_YELLOW);
 	cout << "blue\t";
+	cout << "\n";
 
 	setColor(COL_WHITE, COL_BLACK);
 	cout << "BG:dark-blue\t";
@@ -170,6 +175,7 @@ int main() {
 	cout << "red\t";
 	setColor(COL_BLUE, COL_DARK_BLUE);
 	cout << "blue\t";
+	cout << "\n";
 
 	setColor(COL_WHITE, COL_BLACK);
 	cout << "BG:cyan\t";
@@ -187,6 +193,7 @@ int main() {
 	cout << "red\t";
 	setColor(COL_BLUE, COL_DARK_CYAN);
 	cout << "blue\t";
+	cout << "\n";
 
 	getChar();
 	return 0;
