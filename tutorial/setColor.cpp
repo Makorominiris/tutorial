@@ -41,7 +41,7 @@ void setColor(int col) {
 		attr |= FOREGROUND_BLUE;
 	SetConsoleTextAttribute(hCons, attr);
 }
-void setColor(int col) {
+void setColor(int fg, int bg) {
 
 	HANDLE hCons = GetStdHandle( STD_OUTPUT_HANDLE );
 	WORD attr = 0;
