@@ -195,6 +195,6 @@ int main() {
 	cout << "blue\t";
 	cout << "\n";
 
-	getChar();
+	getchar();
 	return 0;
 }
